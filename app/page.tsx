@@ -33,6 +33,7 @@ this comment is stating the obvious, delete it!
 */}
         {/* create first button */}
         <Button
+          m={10}
           colorScheme={x}
           onClick={() => {
             setX(y);
@@ -41,6 +42,7 @@ this comment is stating the obvious, delete it!
           {z}
         </Button>
         <Button
+          m={10}
           colorScheme={x}
           onClick={() => {
             setX(w);
@@ -49,6 +51,7 @@ this comment is stating the obvious, delete it!
           {k}
         </Button>
         <Button
+          m={10}
           colorScheme={x}
           onClick={() => {
             setX(q);
@@ -67,7 +70,7 @@ this comment is stating the obvious, delete it!
   } */
   return (
     <main>
-      <Heading>This is first page</Heading>
+      <Heading textAlign="center">This is first page</Heading>
       <Box>{doStuff("green", "yellow", "red", "blue", "orange", "pink")}</Box>
     </main>
   );
