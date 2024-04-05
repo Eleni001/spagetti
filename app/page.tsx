@@ -1,5 +1,10 @@
 "use client";
-import { Box, Button, Heading } from "@chakra-ui/react";
+/*  
+https://eslint.org/docs/latest/rules/no-duplicate-imports
+Button is imported separately, instead it should be imported in the same line as other chakra-ui/react imports
+*/
+import { Box, Heading } from "@chakra-ui/react"; 
+import { Button } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function Home() {
