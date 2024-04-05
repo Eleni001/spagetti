@@ -68,6 +68,10 @@ this comment is stating the obvious, delete it!
             */
             if (q === q) {
               setX(q);
+              /* https://eslint.org/docs/latest/rules/no-empty
+              an else statement block that doesnt contain anything causes confusion. shold be removed
+              */
+            } else {
             }
           }}
         >
