@@ -15,6 +15,7 @@ export default function Home() {
     /* https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#function-arguments-2-or-fewer-ideally 
     too many arguments, I would have instead given a list of pairs of color and label
     */
+
     y: string,
     z: string,
     w: string,
@@ -27,6 +28,10 @@ export default function Home() {
       button needlessly duplicated, if the argument had been a list of pairs then it would have been possible to make a map call to create the buttons.
       */
       <>
+        {/* https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#only-comment-things-that-have-business-logic-complexity
+this comment is stating the obvious, delete it!
+*/}
+        {/* create first button */}
         <Button
           colorScheme={x}
           onClick={() => {
@@ -54,6 +59,12 @@ export default function Home() {
       </>
     );
   }
+  /* https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#dont-leave-commented-out-code-in-your-codebase
+  don´t leave commented out code! if needed it can be found in git history 
+  */
+  /* function doOtherStuff(a: number, b: number) {
+    return a * b;
+  } */
   return (
     <main>
       <Heading>This is first page</Heading>
