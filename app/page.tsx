@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@chakra-ui/react";
+import { Box, Button, Heading } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function Home() {
@@ -8,25 +8,56 @@ export default function Home() {
   */
   const [x, setX] = useState("green");
 
+  /* https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#function-names-should-say-what-they-do
+  doStuff tells nothing about what the function does, a better name would be createButtons
+  */
+  function doStuff(
+    /* https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#function-arguments-2-or-fewer-ideally 
+    too many arguments, I would have instead given a list of pairs of color and label
+    */
+    y: string,
+    z: string,
+    w: string,
+    k: string,
+    q: string,
+    p: string
+  ) {
+    return (
+      /* https://github.com/ryanmcdermott/clean-code-javascript?tab=readme-ov-file#remove-duplicate-code
+      button needlessly duplicated, if the argument had been a list of pairs then it would have been possible to make a map call to create the buttons.
+      */
+      <>
+        <Button
+          colorScheme={x}
+          onClick={() => {
+            setX(y);
+          }}
+        >
+          {z}
+        </Button>
+        <Button
+          colorScheme={x}
+          onClick={() => {
+            setX(w);
+          }}
+        >
+          {k}
+        </Button>
+        <Button
+          colorScheme={x}
+          onClick={() => {
+            setX(q);
+          }}
+        >
+          {p}
+        </Button>
+      </>
+    );
+  }
   return (
     <main>
-      This is first page
-      <Button
-        colorScheme={x}
-        onClick={() => {
-          setX("blue");
-        }}
-      >
-        Blue
-      </Button>
-      <Button
-        colorScheme={x}
-        onClick={() => {
-          setX("green");
-        }}
-      >
-       Green
-      </Button>
+      <Heading>This is first page</Heading>
+      <Box>{doStuff("green", "yellow", "red", "blue", "orange", "pink")}</Box>
     </main>
   );
 }
