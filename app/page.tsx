@@ -3,8 +3,11 @@
 https://eslint.org/docs/latest/rules/no-duplicate-imports
 Button is imported separately, instead it should be imported in the same line as other chakra-ui/react imports
 */
-import { Box, Heading } from "@chakra-ui/react"; 
-import { Button } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
+/*  https://eslint.org/docs/latest/rules/line-comment-position
+the position on the comment is not consistent. Choose either place it above or beside the code.
+*/
+import { Button } from "@chakra-ui/react"; // this should be added to the list of imports form chakra
 import { useState } from "react";
 
 export default function Home() {
