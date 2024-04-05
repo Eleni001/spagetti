@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spagetti
 
-## Getting Started
+## Introduktion
 
-First, run the development server:
+Detta är en inlämningsuppgift som utgår på att man ska skriva mycket dålig kod men som ändå fungerar. Syftet med uppgiften är att man ska visa kunskap på good practice genom att bryta principer och genom kommentarer visa hur man skulle kunna förbättra koden. Man ska utgå från:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- https://github.com/alan2207/bulletproof-react?tab=readme-ov-file
+- https://eslint.org/docs/latest/rules/
+- https://github.com/ryanmcdermott/clean-code-javascript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Det ska även finnas ytterligare fem fel som byrter mot regler från ESlint.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Vad projected består av
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Chakra UI**
 
-## Learn More
+## För att använda programmet
 
-To learn more about Next.js, take a look at the following resources:
+1.  Klona repot:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`git clone https://github.com/Eleni001/spagetti.git`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2.  Navigera till projektmappen:
 
-## Deploy on Vercel
+`cd spagetti`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  Installera dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    `npm install`
+
+4.  Köra programmet:
+
+    `npm run dev`
