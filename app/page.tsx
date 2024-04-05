@@ -76,6 +76,16 @@ this comment is stating the obvious, delete it!
   /* function doOtherStuff(a: number, b: number) {
     return a * b;
   } */
+
+  /*  https://eslint.org/docs/latest/rules/no-unreachable
+  placing the function call after return makes it unreachable, it should be placed outside and under the function
+  */
+  function someFunction(a: number, b: number): number {
+    return a + b;
+    const result = someFunction(5, 3);
+    console.log(result);
+  }
+
   return (
     <main>
       <Heading textAlign="center">This is first page</Heading>
