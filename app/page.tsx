@@ -62,7 +62,13 @@ this comment is stating the obvious, delete it!
           m={10}
           colorScheme={x}
           onClick={() => {
-            setX(q);
+            /* 
+            https://eslint.org/docs/latest/rules/no-self-compare
+            q is always going to be q so this should be removed
+            */
+            if (q === q) {
+              setX(q);
+            }
           }}
         >
           {p}
